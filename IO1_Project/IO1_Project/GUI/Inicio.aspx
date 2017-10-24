@@ -45,145 +45,148 @@
 
     <div class="jumbotron">
         <div class="container text-center">
-            <h1><strong>Productos Destacados</strong></h1>
-
+            <h1><strong>Titulos Destacados</strong></h1>
         </div>
     </div>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-    
-    <%--Esta parte debiera de llenarse automaticamente al cargar la pagina con la DB--%> 
-    <p class="alert-light">Mas vendidas</p>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-3">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">Titulo</div>
-                    <div class="panel-body">
-                        <a href="Pelicula.aspx">
-                           <%-- <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width: 100%" alt="Image">--%>
-                            <asp:Image ID="Image1" runat="server" CssClass="img-responsive" AlternateText="Image" Width="230px" Height="120px" ImageUrl="https://placehold.it/150x80?text=IMAGE"  />
-                        </a>
-                     </div>
-                        
-                    <div class="panel-footer">Descripcion</div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">Titulo</div>
-                    <div class="panel-body">
-                        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width: 100%" alt="Image"></div>
-                    <div class="panel-footer">Descripcion</div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">Titulo</div>
-                    <div class="panel-body">
-                        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width: 100%" alt="Image"></div>
-                    <div class="panel-footer">Descripcion</div>
-                </div>
-            </div>        
-        </div>
-    </div>
-    <br>
-    <p class="alert-light">Mas Populares</p>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-3">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">Titulo</div>
-                    <div class="panel-body">
-                        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width: 100%" alt="Image"></div>
-                    <div class="panel-footer">Descripcion</div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">Titulo</div>
-                    <div class="panel-body">
-                        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width: 100%" alt="Image"></div>
-                    <div class="panel-footer">Descripcion</div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">Titulo</div>
-                    <div class="panel-body">
-                        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width: 100%" alt="Image"></div>
-                    <div class="panel-footer">Descripcion</div>
-                </div>
-            </div>        
-        </div>
-    </div>
-    <br />
 
-    <p class="alert-light">Mejor Votadas</p>
-        <div class="container">
-        <div class="row">
-            <div class="col-sm-3">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">Titulo</div>
-                    <div class="panel-body">
-                        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width: 100%" alt="Image"></div>
-                    <div class="panel-footer">Descripcion</div>
+
+
+    <div class="row">
+        <div class="col-sm-3">
+            <h4><strong>categorias</strong></h4>
+            <br />
+            aqui el listado de categorias. 
+        </div>
+        <div class="col-sm-9">
+            <p class="alert-light">Mas vendidas</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">Titulo</div>
+                            <div class="panel-body">
+                                <a href="Pelicula.aspx">
+                                    <asp:Image ID="Image1" runat="server" CssClass="img-responsive" AlternateText="Image" Width="230px" Height="200px" ImageUrl="https://placehold.it/150x80?text=IMAGE" />
+                                </a>
+                            </div>
+
+                            <div class="panel-footer">Descripcion</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">Titulo</div>
+                            <div class="panel-body">
+                                 <asp:Image ID="Image2" runat="server" CssClass="img-responsive" AlternateText="Image" Width="230px" Height="200px" ImageUrl="https://placehold.it/150x80?text=IMAGE" />
+                            </div>
+                            <div class="panel-footer">Descripcion</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">Titulo</div>
+                            <div class="panel-body">
+                                <asp:Image ID="Image3" runat="server" CssClass="img-responsive" AlternateText="Image" Width="230px" Height="200px" ImageUrl="https://placehold.it/150x80?text=IMAGE" />
+                            </div>
+                            <div class="panel-footer">Descripcion</div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-sm-3">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">Titulo</div>
-                    <div class="panel-body">
-                        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width: 100%" alt="Image"></div>
-                    <div class="panel-footer">Descripcion</div>
+            <br>
+            <p class="alert-light">Mas Populares</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">Titulo</div>
+                            <div class="panel-body">
+                                <asp:Image ID="Image4" runat="server" CssClass="img-responsive" AlternateText="Image" Width="230px" Height="200px" ImageUrl="https://placehold.it/150x80?text=IMAGE" />
+                            </div>
+                            <div class="panel-footer">Descripcion</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">Titulo</div>
+                            <div class="panel-body">
+                                 <asp:Image ID="Image5" runat="server" CssClass="img-responsive" AlternateText="Image" Width="230px" Height="200px" ImageUrl="https://placehold.it/150x80?text=IMAGE" />
+                            </div>
+                            <div class="panel-footer">Descripcion</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">Titulo</div>
+                            <div class="panel-body">
+                                 <asp:Image ID="Image6" runat="server" CssClass="img-responsive" AlternateText="Image" Width="230px" Height="200px" ImageUrl="https://placehold.it/150x80?text=IMAGE" />
+                            </div>
+                            <div class="panel-footer">Descripcion</div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-sm-3">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">Titulo</div>
-                    <div class="panel-body">
-                        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width: 100%" alt="Image"></div>
-                    <div class="panel-footer">Descripcion</div>
+            <br />
+
+            <p class="alert-light">Mejor Votadas</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">Titulo</div>
+                            <div class="panel-body">
+                                 <asp:Image ID="Image7" runat="server" CssClass="img-responsive" AlternateText="Image" Width="230px" Height="200px" ImageUrl="https://placehold.it/150x80?text=IMAGE" />
+                            </div>
+                            <div class="panel-footer">Descripcion</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">Titulo</div>
+                            <div class="panel-body">
+                                <asp:Image ID="Image8" runat="server" CssClass="img-responsive" AlternateText="Image" Width="230px" Height="200px" ImageUrl="https://placehold.it/150x80?text=IMAGE" />
+                            </div>
+                            <div class="panel-footer" id="divdescripcion" runat="server">Descripcion</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">Titulo</div>
+                            <div class="panel-body">
+                                 <asp:Image ID="Image9" runat="server" CssClass="img-responsive" AlternateText="Image" Width="230px" Height="200px" ImageUrl="https://placehold.it/150x80?text=IMAGE" />
+                            </div>
+                            <div class="panel-footer">Descripcion</div>
+                        </div>
+                    </div>
                 </div>
-            </div>        
+            </div>
+            <br />
         </div>
     </div>
-    <br />
+
+    <%--Esta parte debiera de llenarse automaticamente al cargar la pagina con la DB--%> 
+    
 </asp:Content>
+<%-- Footer --%>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder3" runat="server">
     <p class="alert-info">
         Sitio web desarrollado ùnicamente con propositos educativos.
     </p>
 </asp:Content>
 
-<asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder4" runat="server">
-    <ul class="navbar-nav mx-auto">
-        <li class="nav-item active px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="Inicio.aspx">INICIO
-                <span class="sr-only">(current)</span>
-            </a>
-        </li>
-        <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="#">CATALOGO</a>
-        </li>
-        <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="#">Por definir</a>
-        </li>
-        <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="#">Por definir</a>
-        </li>
-    </ul>
 
-
-
-    <ul class="nav navbar-nav navbar-right">
+<%-- Menu de la pagina --%>
+ <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder4" runat="server">    
+     <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>Carrito de Compra</a></li>
 
         <%
-            string rol = Request.QueryString["rl"];
-            if (rol == "0")
+            
+            if (currentrol == "0")
             {
-                Response.Write("<li><a href=#><span class=\"glyphicon glyphicon-user\"></span>Mi Cuenta</a></li>");
+                Response.Write("<li><a href=\"Configuracion_Cuenta.aspx\"><span class=\"glyphicon glyphicon-user\"></span>Mi Cuenta</a></li>");
                 Response.Write("<li><a href=\"Inicio.aspx?logout=true\"><span class=\"glyphicon glyphicon-log-in\"></span>Logout</a></li>");
             }
             else
@@ -194,10 +197,12 @@
 
         %>
 
+
+        
         <%--<li><a href="Registro_User.aspx"><span class="glyphicon glyphicon-user"></span>Registrarse</a></li>--%>
         <%-- esta parte se mostrara de acuerdo al estado de la sesion--%>
         <%--<li><a href="Login.aspx"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>--%>
-        <%--Cambiara de acuerdo al estado de la sesion. --%>
+        <%--Cambiara de acuerdo al estado de la sesion. --%>        
     </ul>
 
 </asp:Content>

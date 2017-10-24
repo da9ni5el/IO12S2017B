@@ -10,13 +10,22 @@ namespace IO1_Project.GUI
     public partial class Inicio : System.Web.UI.Page
     {
         Login login = new Login();
+        protected string currentrol= string.Empty;
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Request.QueryString["rl"] == "true")
+
+            if (login.rol!=null)
             {
-                login.rol = null;
-                Response.Redirect(@"~\GUI\Inicio.aspx?rl=null");
+                currentrol = login.rol;
             }
+
+
+            if (Request.QueryString["logout"] == "true")
+            {
+                login.rol =currentrol = null;
+                
+                //Response.Redirect(@"~\GUI\Inicio.aspx");
+            }            
         }
     }
 }

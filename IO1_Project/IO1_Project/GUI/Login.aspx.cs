@@ -12,13 +12,19 @@ namespace IO1_Project.GUI
         Modelo_Negocio.Usuario user = new Usuario();
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            salida.Visible = false;
         }
 
         public string rol
         {
             get { return (String)Session["rol"]; }
             set { Session["rol"] = value; }
+        }
+
+        public string username
+        {
+            get { return (String)Session["user"]; }
+            set { Session["user"] = value; }         
         }
 
         protected void enviar_Click(object sender, EventArgs e)
@@ -28,12 +34,18 @@ namespace IO1_Project.GUI
             {
                 rol = user.login(iduser.Text, password.Text);
                 if (rol!="error")
-                {                    
+                {
+                    username = iduser.Text;                 
                     Response.Redirect("~/GUI/inicio.aspx?rl=" + rol);
+                    
                 }
                 else
-                {                 
-                    Response.Redirect("~/GUI/inicio.aspx?rl=null");
+                {
+                    
+                    salida.InnerHtml = "<strong>Error! </strong> se ha producido un error al tratar de iniciar sexion. Intentelo nuevamente";
+                    salida.Visible = true;
+                    password.Text = string.Empty;
+                    //Response.Redirect("~/GUI/inicio.aspx?rl=null");
                 }
             }
             //codigo que se ejecutara cuando se de click al boton.

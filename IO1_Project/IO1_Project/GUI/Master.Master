@@ -27,29 +27,52 @@
     <%--<link href="css/business-casual.css" rel="stylesheet">--%>
     <link href="css/business-casual.css" rel="stylesheet" />
 
+       <style>
+        .row.content{height: 1500px}
+        .jumbotron.background{
+            color :#8ACD77;
+        }
+    </style>
+
   </head>
 
   <body>
-    <div class="tagline-upper text-center text-heading text-shadow text-white mt-5 d-none d-lg-block">Pelis Ya!</div>    
+    <div class="tagline-upper text-center text-heading text-shadow text-white mt-5 d-none d-lg-block">Kakariko Jr</div>    
     <br>
-
-      <form id="contenedor" class="form-group" runat="server">
-        
+      
+      <form id="contenedor" class="form-group" runat="server">                            
           <!-- Navigation -->
           <header>
               <nav class="navbar navbar-expand-lg navbar-light bg-faded py-lg-4">
-              <div class="container-fluid">
-                  <div class="menu">
-                      <div class="navbar-header">
+              <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control" Width="250px" placeholder="Ingresa tu busqueda"></asp:TextBox>&nbsp               
+              <button type="button" class="btn btn-default" >
+                  <span class="glyphicon glyphicon-search"></span> Buscar
+              </button>
+              <div class="container">
+                  
+                   <%--   <div class="navbar-header">
                       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon"></span>
                            <span class="navbar-toggler-icon"></span>
                            <span class="navbar-toggler-icon"></span>
                       </button>                          
-                      </div>
+                      </div>--%>
                       <div class="collapse navbar-collapse" id="navbarResponsive">
+                          <ul class="navbar-nav mx-auto">
+                              <li class="nav-item active px-lg-4">
+                                  <a class="nav-link text-uppercase text-expanded" href="Inicio.aspx">INICIO
+                                        <span class="sr-only">(current)</span>
+                                  </a>
+                              </li>
+                              <li class="nav-item px-lg-4">
+                                  <a class="nav-link text-uppercase text-expanded" href="#">CATALOGO</a>
+                              </li>     
+                              <li class="nav-item px-lg-4">
+                                  <a class="nav-link text-uppercase text-expanded" href="#">Acerca De</a>
+                              </li>                     
+                          </ul>
                           <asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat="server"></asp:ContentPlaceHolder>
-                      </div>
+                      <%--</div>--%>
                   </div>
               </div>
           </nav>

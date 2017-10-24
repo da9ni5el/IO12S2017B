@@ -21,6 +21,13 @@ h1 {
   font-size: 4rem;
 }
 
+p{
+    font-size:large;
+}
+.jumbotron{
+    background-color:aliceblue !important;
+}
+
 .tagline-upper {
   font-size: 5rem;
   font-weight: 700;

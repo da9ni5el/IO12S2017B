@@ -43,6 +43,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="GMaps, Version=4.1.0.6, Culture=neutral, PublicKeyToken=564d55b144e7aa5a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Subgurim.Maps.4.1.0.6\lib\net20\GMaps.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=2.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.4.0\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
       <Private>True</Private>
@@ -107,6 +111,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="GUI\Configuracion_Cuenta.aspx" />
     <Content Include="GUI\css\business-casual.css" />
     <Content Include="GUI\img\bg.jpg" />
     <Content Include="GUI\img\intro-pic.jpg" />
@@ -131,7 +136,10 @@
     <Content Include="GUI\vendor\popper\popper.js" />
     <Content Include="GUI\vendor\popper\popper.min.js" />
     <Content Include="imagenes carousel\abc_promocion_cine_clasico_cada_sabado_por_1_99_euros_los_diez_mandamientos_titulos_dvd_peliculas.jpg" />
+    <Content Include="imagenes carousel\avatar.jpg" />
+    <Content Include="imagenes carousel\camara de cine.jpeg" />
     <Content Include="imagenes carousel\descarga.jpg" />
+    <Content Include="imagenes carousel\portada_inicio.jpg" />
     <Content Include="imagenes carousel\w1IvP.jpg" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
@@ -168,6 +176,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GUI\Configuracion_Cuenta.aspx.cs">
+      <DependentUpon>Configuracion_Cuenta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Configuracion_Cuenta.aspx.designer.cs">
+      <DependentUpon>Configuracion_Cuenta.aspx</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Inicio.aspx.cs">
       <DependentUpon>Inicio.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -203,7 +218,10 @@
     <Compile Include="GUI\Registro_User.aspx.designer.cs">
       <DependentUpon>Registro_User.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Modelo_Negocio\Comentario.cs" />
     <Compile Include="Modelo_Negocio\ConexionBD.cs" />
+    <Compile Include="Modelo_Negocio\Pelicula.cs" />
+    <Compile Include="Modelo_Negocio\PeliculaDB.cs" />
     <Compile Include="Modelo_Negocio\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

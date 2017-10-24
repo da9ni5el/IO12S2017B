@@ -16,6 +16,9 @@
         <div class="input-group">
             <asp:Button ID="enviar" runat="server" CssClass="btn btn-lg btn-default" Text="Iniciar" OnClick="enviar_Click" />
         </div>
+        <div id="salida" runat="server" class="alert alert-danger">
+
+        </div>
     </div>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
