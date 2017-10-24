@@ -58,6 +58,24 @@ namespace IO1_Project.GUI {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl sinopsis;
         
         /// <summary>
+        /// Control comprar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button comprar;
+        
+        /// <summary>
+        /// Control txtcomment.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl txtcomment;
+        
+        /// <summary>
         /// Control TextBox1.
         /// </summary>
         /// <remarks>
@@ -65,6 +83,15 @@ namespace IO1_Project.GUI {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        
+        /// <summary>
+        /// Control buttonenviar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl buttonenviar;
         
         /// <summary>
         /// Control enviar.
@@ -76,12 +103,12 @@ namespace IO1_Project.GUI {
         protected global::System.Web.UI.WebControls.Button enviar;
         
         /// <summary>
-        /// Control coment.
+        /// Control formcontenedor.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl coment;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl formcontenedor;
     }
 }

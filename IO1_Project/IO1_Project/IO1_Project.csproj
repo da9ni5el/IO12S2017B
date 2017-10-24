@@ -111,6 +111,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="GUI\Carrito.aspx" />
     <Content Include="GUI\Configuracion_Cuenta.aspx" />
     <Content Include="GUI\css\business-casual.css" />
     <Content Include="GUI\img\bg.jpg" />
@@ -176,6 +177,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GUI\Carrito.aspx.cs">
+      <DependentUpon>Carrito.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Carrito.aspx.designer.cs">
+      <DependentUpon>Carrito.aspx</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Configuracion_Cuenta.aspx.cs">
       <DependentUpon>Configuracion_Cuenta.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -220,6 +228,7 @@
     </Compile>
     <Compile Include="Modelo_Negocio\Comentario.cs" />
     <Compile Include="Modelo_Negocio\ConexionBD.cs" />
+    <Compile Include="Modelo_Negocio\Elenco.cs" />
     <Compile Include="Modelo_Negocio\Pelicula.cs" />
     <Compile Include="Modelo_Negocio\PeliculaDB.cs" />
     <Compile Include="Modelo_Negocio\Usuario.cs" />

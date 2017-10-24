@@ -180,7 +180,7 @@
 <%-- Menu de la pagina --%>
  <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder4" runat="server">    
      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>Carrito de Compra</a></li>
+        <li><a href="Carrito.aspx"><span class="glyphicon glyphicon-shopping-cart"></span>Carrito de Compra</a></li>
 
         <%
             
